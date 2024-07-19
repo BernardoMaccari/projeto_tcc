@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    height: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color:#6F4E37;
+    border: 1px solid black;
+    padding: 1vw;
+    justify-content: space-between;
+    color: white;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-grow: 2;
+    gap: 20px;
+
+}
+
+.nav_primeira{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    font-size: larger;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.titulocor{
+    color: #e4c0a8;
+}
+
+.pesquisa_bar{
+    display: flex;
+    background-color: beige;
+    border: solid 5px;
+    border-radius: 20px;
+    justify-content: space-between;
+
+}
+
+#lupa_imagem {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    cursor: pointer;
+    justify-content: space-between;
+    width: 25px;
+}
+
+#lupa_imagem img{
+    width: 100%;
+}
+
+#user_perfil{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    justify-content: left;
+}
+
+#user_perfil img{
+    width: 40px;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    background-color: #B87333;
+    height: 600px;
+}
+
+.linha{
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    border: 1px solid black;
+    align-items: center;
+    background-color: #8B4513;
+    width: 90%;
+}
+
+.linha img{
+    width: 90%;
+}
+
+.col{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 25%;
+}
+
+.titulos{
+    font-size: large;
+    color: antiquewhite;
+}
+
+
+footer{
+    display: flex;
+    flex-direction: row; 
+    background-color: #6c3404;
+    height: 60px;
+}
+
+.barra_de_sociais{
+    display: flex;
+    flex-direction: row;
+}
+
+.barra_de_sociais img{
+    width: 40px;
+    height: 40px;
+}
