@@ -36,6 +36,7 @@ header{
 
 .titulocor{
     color: #e4c0a8;
+    text-decoration: none;
 }
 
 .pesquisa_bar{
@@ -82,16 +83,18 @@ main{
   
 .container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    width: -webkit-fill-available;
 }
   
 .section {
     width: 300px;
     margin: 20px;
-    border: 1px solid black;
+    border: 2px solid black;
     padding: 20px;
     text-align: center;
+    background-color: #96541E;
 }
   
 .title {
@@ -129,9 +132,13 @@ footer{
 .barra_de_sociais img{
     width: 40px;
     height: 40px;
+    margin-right: 5px;
+    margin-left: 10px;
 }
 
 .titulos{
-    font-size: large;
+    font-size: 15px;
     color: antiquewhite;
+    text-decoration: none;
+    margin-top: 10px;
 }
