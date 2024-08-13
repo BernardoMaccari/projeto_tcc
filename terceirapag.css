@@ -61,15 +61,17 @@ header{
     width: 100%;
 }
 
-#user_perfil{
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    justify-content: left;
+.butao-user {
+    width: 40px;
+    height: 35px;
+    background-color: #6F4E37;
+    border-radius: 40px;
+    margin-left: 5px;
+    background-color: beige;
 }
 
-#user_perfil img{
-    width: 40px;
+.butao-user img{
+    width: 35px;
 }
 
 main{
