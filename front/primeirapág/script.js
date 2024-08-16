@@ -16,8 +16,8 @@ async function handleSubmit(event) {
 
 
 
-let games = document.querySelector("#games");
+// let games = document.querySelector("#games");
 
-games.addEventListener('click', function(){
-    window.location.href = "https://dinorunner.com/pt/";
-})
+// games.addEventListener('click', function(){
+//     window.location.href = "https://dinorunner.com/pt/";
+// })
