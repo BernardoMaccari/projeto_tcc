@@ -18,7 +18,7 @@ loginButton.onclick = async function () {
 
     if (results.success) {
         alert("Login bem-sucedido");
-        window.location.href = "primeirapág/primeirapag.html";
+        window.location.href = "../primeirapág/primeirapag.html";
     } else {
         alert("Falha no login: " + results.message);
     }
