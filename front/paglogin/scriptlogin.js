@@ -18,6 +18,8 @@ loginButton.onclick = async function () {
 
     if (results.success) {
         alert("Login bem-sucedido");
+        localStorage.setItem('emailUsuario', results.user.email);
+        localStorage.setItem('nomeUsuario', results.user.nome);
         window.location.href = "../primeirapág/primeirapag.html";
     } else {
         alert("Falha no login: " + results.message);
