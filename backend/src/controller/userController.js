@@ -1,5 +1,9 @@
 const connection = require('../config/db');
 
+
+
+
+
 async function storeUser(request, response) {
     const params = [
         request.body.nome,
@@ -67,7 +71,43 @@ async function loginUser(request, response) {
     });
 }
 
+
+
+
+async function storeArquive(request, response) {
+    const { titulo, resumo } = request.body;
+    const arquivo = request.file.filename;
+
+    const params = Array(
+        titulo,
+        resumo,
+        arquivo
+    );
+
+    console.log(params)
+    
+    const query = "INSERT INTO pesquisa(titulo, resumo, arquivo) VALUES(?, ?, ?);";
+
+    connection.query(query, params, (err, results) => {
+        console.log(err)
+        if (results) {
+            response.status(200).json({
+                success: true,
+                message: "Sucesso",
+                data: results
+            });
+        } else {
+            response.status(400).json({
+                success: false,
+                message: "Sem Sucesso",
+                data: err
+            });
+        }
+    });
+}
+
 module.exports = {
     storeUser,
-    loginUser
+    loginUser,
+    storeArquive
 }

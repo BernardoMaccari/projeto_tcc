@@ -77,10 +77,21 @@
             <h4>Está area é designada para postar suas pesquisas ou suas descobertas, será enviado
                 para uma analise e então sera postado no nosso site.
             </h4>
+
+            <form action="">
+                <input type="text" id="titulo" name="titulo" placeholder="Título">
+                <textarea id="resumo" name="resumo" placeholder="Resumo"></textarea>
+                <input type="file" id="arquivo" name="arquivo">
+                <button type="button" value="Mandar" id="botao_arquivos" onclick="cadastrarArquivo(event)">Enviar</button>
+            </form>
             
-            <!-- <form action="/mandar" method="post" enctype="multipart/form-data"> -->
+            <!-- <form action="/upload" method="post" enctype="multipart/form-data">
                 <input type="file" name="arquivo" id="file">Arquivo +</input>
                 <button type="button" value="Mandar" id="botao_arquivos" onclick="handleSubmit(event)">Mandar</button>
+              </form> -->
+            <!-- <form action="/mandar" method="post" enctype="multipart/form-data"> -->
+                <!-- <input type="file" name="arquivo" id="file">Arquivo +</input>
+                <button type="button" value="Mandar" id="botao_arquivos" onclick="handleSubmit(event)">Mandar</button> -->
             <!-- </form> -->
         </div>
         
