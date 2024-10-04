@@ -6,7 +6,7 @@ let storage = multer.diskStorage({
         },
         filename: function (req, file, cb) {
             let nome_sem_espacos = file.originalname.trim();
-            return cb(null, Date.now() + '_' + file.nome_sem_espacos);
+            return cb(null, Date.now() + '_' + nome_sem_espacos);
         }
 });
 

@@ -4,6 +4,8 @@ const connection = require('../config/db');
 
 
 
+
+
 async function storeUser(request, response) {
     const params = [
         request.body.nome,
@@ -84,7 +86,6 @@ async function storeArquive(request, response) {
         arquivo
     );
 
-    console.log(params)
     
     const query = "INSERT INTO pesquisa(titulo, resumo, arquivo) VALUES(?, ?, ?);";
 
