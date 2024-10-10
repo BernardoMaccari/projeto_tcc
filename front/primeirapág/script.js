@@ -1,6 +1,8 @@
 // async function handleSubmit(event) {
 //     event.preventDefault();
 
+// const { fetch } = require("undici-types");
+
 // const { application } = require("express");
 // const { FormData } = require("undici-types");
 
@@ -34,16 +36,17 @@ async function cadastrarArquivo(event) {
   const resumo = document.querySelector("#resumo").value;
   const arquivo = document.querySelector("#arquivo").files[0];
 
+  // console.table(titulo, resumo, arquivo.name);
+
   let formData = new FormData();
 
-  formData.append("arquivo", arquivo);
   formData.append("titulo", titulo);
   formData.append("resumo", resumo);
+  formData.append("file", arquivo);
 
   const response = await fetch("http://localhost:3006/api/upload/arquivo", {
     method: "POST",
-    // headers: { 'Content-Type': 'application/json'},
-    body: formData
+    body: formData,
   });
 
   const results = await response.json();
