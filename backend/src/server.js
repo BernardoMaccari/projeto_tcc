@@ -10,7 +10,7 @@ const swaggerOptions = {
         info: {
             title: "TCC Dinomax",
             version: "1.0.0",
-            description: "TCC descrito",
+            description: "Documentação do site Dinomax",
         },
         servers: [{ url: "http://localhost:3006}" }],
     },

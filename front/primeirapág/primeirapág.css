@@ -10,7 +10,7 @@ header{
     height: 30px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color:#6F4E37;
-    border: 1px solid black;
+    border: 1.5px solid black;
     padding: 1vw;
     justify-content: space-between;
     color: white;
@@ -88,6 +88,7 @@ main{
     border: 1px solid black;
     align-items: center;
     background-color: #8B4513;
+    border-radius: 20px;
     width: 100%;
 }
 
@@ -111,7 +112,76 @@ main{
     margin: 0 auto;
     width: 30%;
 }
-.bloco{
+
+.bloco {
+    background-color: #a35e29;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    border: 1px solid black;
+    height: 70%;
+    margin: 40px;
+    padding: 20px;
+    color: white;
+}
+
+.bloco h1 {
+    font-size: 24px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.bloco h4 {
+    font-size: 14px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+#titulo, #resumo {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+#resumo {
+    height: 100px;
+}
+
+#arquivo {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+#botao_arquivos {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #d68c63;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 100%;
+}
+
+#botao_arquivos:hover {
+    background-color: #b5754c;
+}
+
+/* .bloco{
 
     display: flex;
     flex-direction: column;
@@ -137,13 +207,14 @@ main{
     font-size: 16px;
     cursor: pointer;
     margin-bottom: 10px;
-}
+} */
 
 footer{
     display: flex;
     flex-direction: row;
     background-color: #6c3404;
     height: 60px;
+    border: 1.5px solid black;
 }
 
 .barra_de_sociais{
@@ -156,6 +227,7 @@ footer{
     height: 40px;
     margin-right: 5px;
     margin-left: 10px;
+    margin-top: 5px;
 }
 
 .titulos{
