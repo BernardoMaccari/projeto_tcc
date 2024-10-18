@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { storeUser, loginUser, storeArquive} = require('../controller/userController');
+const { storeUser, loginUser, storeArquive, getArquives} = require('../controller/userController');
 const upload = require('../multer');
 
 /**
@@ -52,5 +52,7 @@ router.post('/login', loginUser); // Nova rota para login
  *                type: object
  */
 router.post('/upload/arquivo', upload.single('file'), storeArquive);
+
+router.get('get/pesquisa', getArquives);
 
 module.exports = router;

@@ -57,3 +57,14 @@ async function cadastrarArquivo(event) {
     alert(results.message);
   }
 }
+
+document.addEventListener("DOMContentLoaded", async () => {
+  const response = await fetch("http://localhost:3006/api/get/pesquisa");
+  const result = await response.json();
+
+  // console.log(result);
+
+  if (result.success) {
+
+  }
+});

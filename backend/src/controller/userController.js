@@ -107,8 +107,29 @@ async function storeArquive(request, response) {
     });
 }
 
+async function getArquives(request, response) {
+    const query = "SELECT * FROM pesquisa";
+
+    connection.query(query, (err, results) => {
+        if(results) {
+            response.status(200).json({
+                success: true,
+                message: "Sucesso",
+                data: results
+            })
+        } else {
+            response.status(404).json({
+                success: false,
+                message: "Erro",
+                sql: err
+            })
+        }
+    })
+}
+
 module.exports = {
     storeUser,
     loginUser,
-    storeArquive
+    storeArquive,
+    getArquives
 }
