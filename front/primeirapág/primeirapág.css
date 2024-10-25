@@ -81,7 +81,54 @@ main{
     height: 600px;
 }
 
-.linha{
+ .noticia_artigo_kids {
+    width: 100%;
+    padding: 20px;
+}
+
+.linha {
+    background-color: #a35e29;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.col {
+    flex: 1;
+    margin-right: 15px;
+}
+
+.titulos {
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.texto h4 {
+    font-size: 14px;
+    color: white;
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+a:hover {
+    color: #0044cc;
+    text-decoration: none;
+}
+
+.linha + .linha {
+    margin-top: 20px;
+}
+
+/* .linha{
     display: flex;
     margin-top: 30px;
     margin-bottom: 20px;
@@ -111,7 +158,7 @@ main{
     flex-direction: column;
     margin: 0 auto;
     width: 30%;
-}
+} */
 
 .bloco {
     background-color: #a35e29;

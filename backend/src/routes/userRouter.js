@@ -53,6 +53,21 @@ router.post('/login', loginUser); // Nova rota para login
  */
 router.post('/upload/arquivo', upload.single('file'), storeArquive);
 
-router.get('get/pesquisa', getArquives);
+/**
+ * @swagger
+ * api/get/pesquisa:
+ *  get:
+ *    summary: Pegar os arquivos do banco de dados
+ *    responses:
+ *      200:
+ *        description: Pegar arquivos enviados para o banco de dados e mandar de volta para o site, para mostrar eles.
+ *        content:
+ *          application/json:
+ *            schema:
+ *              type: array
+ *              items:
+ *                type: object
+ */
+router.get('/pesquisa', getArquives);
 
 module.exports = router;
