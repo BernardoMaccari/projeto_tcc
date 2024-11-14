@@ -93,6 +93,7 @@ main{
     width: 300px;
     margin: 20px;
     border: 2px solid black;
+    box-shadow: 0 0 10px black;
     padding: 20px;
     text-align: center;
     background-color: #96541E;
@@ -143,5 +144,5 @@ footer{
     font-size: 15px;
     color: antiquewhite;
     text-decoration: none;
-    margin-top: 10px;
+    margin-top: 15px;
 }

@@ -92,8 +92,9 @@ async function cadastrarArquivo(event) {
 
       
       const arquivoLink = document.createElement('a');
-      arquivoLink.href = artigos.arquivo; 
-      arquivoLink.textContent = 'Baixar Arquivo';
+      arquivoLink.href = `/uploads/${artigos.arquivo}`; 
+      arquivoLink.textContent = 'Mostrar arquivo';
+      console.log(arquivoLink);
 
       colDiv.appendChild(tituloLink);
       colDiv.appendChild(arquivoLink);
