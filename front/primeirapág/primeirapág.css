@@ -37,6 +37,7 @@ header{
 .titulocor{
     color: #e4c0a8;
     text-decoration: none;
+    margin-top: 10px;
 }
 
 .pesquisa_bar{
@@ -54,7 +55,7 @@ header{
     padding: 5px;
     cursor: pointer;
     justify-content: space-between;
-    width: 25px;
+    width: 20px;
 }
 
 #lupa_imagem img{
@@ -68,6 +69,12 @@ header{
     border-radius: 40px;
     margin-left: 5px;
     background-color: beige;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+}
+
+.butao-user:hover {
+    transform: scale(1.05);
 }
 
 .butao-user img{
@@ -90,6 +97,7 @@ h1 {
     display: flex;
     color: white;
     margin-bottom: 10px;
+    font-size: 30px;
 }
 
 .linha {
@@ -97,7 +105,6 @@ h1 {
     padding: 20px;
     margin-bottom: 15px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -134,18 +141,25 @@ a:hover {
     margin-top: 20px;
 }
 
-/* .linha{
+.linha{
     display: flex;
     margin-top: 30px;
     margin-bottom: 20px;
-    border: 1px solid black;
+    border: 0.5px solid black;
     align-items: center;
-    background-color: #8B4513;
+    background-color: #a35e29;
     border-radius: 20px;
     width: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
 }
 
-.linha img{
+.linha:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* .linha img{
     width: 90%;
     margin-bottom: 5px;
     margin-left: 5px;

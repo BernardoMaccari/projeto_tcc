@@ -92,7 +92,7 @@ async function cadastrarArquivo(event) {
 
       
       const arquivoLink = document.createElement('a');
-      arquivoLink.href = `/uploads/${artigos.arquivo}`; 
+      arquivoLink.href = `/backend/src/uploads/${artigos.arquivo}`; 
       arquivoLink.textContent = 'Mostrar arquivo';
       console.log(arquivoLink);
 
@@ -112,3 +112,8 @@ async function cadastrarArquivo(event) {
     }
 });
 
+
+document.getElementById("lupa_imagem").onclick = function() {
+  const query = document.getElementById("buscar").value;
+  alert("Você pesquisou por: " + query); // ou redirecione para um backend com a query
+};
