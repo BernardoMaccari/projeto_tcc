@@ -87,7 +87,7 @@ main{
 }
 
   
-.container {
+/* .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -124,6 +124,80 @@ main{
     font-size: 12px;
     line-height: 1;
     color: aliceblue;
+} */
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    margin-left: 80px;
+}
+
+.linha {
+    background-color: #a35e29;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.col {
+    flex: 1;
+    margin-right: 15px;
+}
+
+.titulos {
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.texto h4 {
+    font-size: 14px;
+    color: white;
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+a:hover {
+    color: #0044cc;
+    text-decoration: none;
+}
+
+.linha + .linha {
+    margin-top: 20px;
+}
+
+.linha{
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    border: 0.5px solid black;
+    align-items: center;
+    background-color: #a35e29;
+    border-radius: 20px;
+    width: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+}
+
+.linha:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    display: flex;
+    color: white;
+    margin-bottom: 10px;
+    font-size: 25px;
 }
 
 footer{
