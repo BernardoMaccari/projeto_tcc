@@ -128,6 +128,24 @@ main{
 
 .container {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    margin-left: 80px;
+}
+.recentes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    margin-left: 80px;
+}
+
+.noticiasartigosbrasil {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 80vh;
