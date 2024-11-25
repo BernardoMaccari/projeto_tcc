@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", async () => {
  
  
    if(result.success) {
-       const artigosBlocos = document.querySelector('.container');
+       const artigosBlocos = document.querySelector('.populares');
  
        result.data.forEach(artigos => {
          // console.log(artigos)
